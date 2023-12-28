@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--link 방식-->
+    <link rel="stylesheet" href="index.css"  />
+    <!--내장 방식: 동일한 것들이 있으면 한 번에 바뀐다.-->
+    <!--li 태그: 선택자-->
+    <style>
+        li {
+            color: black;
+            width: 400px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--inline 방식: 하나, 그 대상만 바꾼다.-->
+        <!--color: 폰트의 색상을 변경-->
+        <h1 style="color: violet;">CSS 사용법 익히기</h1>
+        <!--background-color는 배경 색상을 변경-->
+        <ul style="background-color: black;">
+            <li>원</li>
+            <li>투</li>
+            <li>쓰리</li>
+        </ul>
+    </div>
+</body>
+</html>
