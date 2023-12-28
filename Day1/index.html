@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kr"> <!--검색 언어 설정?-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--모바일 환경에 영향을 주는 설정-->
+    <title>KDT 11기</title>
+</head>
+<body>
+    <!--div 태그: block 태그로 한줄의 영역을 차지하는 태그-->
+    <div>Hello world!!</div>
+    <div>안녕하세요.</div>
+    <!--H1~6 제목태그-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!--P태그: 문장을 쓰는 곳 / br 태그: 줄바꿈-->
+    <p>안녕하세요? 좋은 아침입니다.</p>
+    <p>안녕하세요? <br> 좋은 아침입니다.</p>
+    <!--hr 태그: 한 줄 긋기-->
+    <hr>
+    <!--ul태그: 순서없는 목록 만들기-->
+    <!--li태그: ul/ol 태그 안에 list를 작성하는 태그-->
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>파인애플</li>
+    </ul>
+    <!--ol태그: 순서있는 목록 만들기-->
+    <ol>
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <!--속성 값을 넣어 꾸며줄 수 있다
+    ul 태그 속성(마커모양): disc(기본), circle, square, none-->
+    <ul type="circle">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>파인애플</li>
+    </ul>
+    <!--ol 태그 속성(숫자 모양): 1, A, a, I, i-->
+    <ol type="i">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <!--start 태그: 시작번호-->
+    <ol type="1" start="10" >
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <!--reversed: 역순으로-->
+    <ol type="1" start="10" reversed >
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <!--중첩 예시-->
+    <ul type="square">
+        <li>
+            <ol>
+            <li>일</li>
+            <li>이</li>
+            <li>삼</li>
+        </ol>
+        </li>
+        <li>
+        <ol>
+            <li>일</li>
+            <li>이</li>
+            <li>삼</li>
+        </ol>
+        </li>
+    </ul>
+    <!--문자 꾸미기-->
+    <ol>
+        <li><b>일</b></li>
+        <li><strong>이</strong></li>
+        <li><I>삼</I></li>
+    </ol>
+    <ol>
+        <li><em>일</em></li>
+        <li><del>이</del></li>
+        <li><u>삼</u></li>
+    </ol>   
+    <!--img 태그: src 속성을 꼭 부여.-->
+    <img src="data:image/png;base64,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" alt="광고 이미지" />
+    <!--a 태그: 페이지를 이동할 때 사용 target="_blank"는 새탭으로 열림-->
+    <div>
+        <a href="https://www.naver.com/" target="_blank">이동</a>
+    </div>
+    <!--inline태그: block과 반대로 영역이 없음-->
+    <div>
+        <a href="https://www.naver.com/" target="_blank">이동</a>
+        <a href="https://www.naver.com/" target="_blank">이동</a>
+        <a href="https://www.naver.com/" target="_blank">이동</a>
+    </div>
+    <div>
+        <span>안녕하세요? </span><span>반갑습니다?</span>
+    </div>
+
+    <hr  />
+    <!--form태그: input태그를 담는 역할, 서버로 input의 데이터(value)를 전송 시키는 역할-->
+    <form>
+        <input type="button" value="전송"  /> <!--기능만-->
+        <button>버튼</button> <!--기본값이 서밋(sumit), 서버로 전송-->
+        <button type="button">버튼</button> <!--기능만-->
+        <!--글을 입력하게 만드는 것, placeholder 속성은 사용자에게 안내해주는 역할-->
+        <br  />
+        <input type="text" placeholder="이름"  />
+        <br  />
+        <input type="password" placeholder="비밀번호"  /><br  />
+        <input type="checkbox" name="Food" value="pizza"  />피자 <br  />
+        <input type="checkbox" name="Food" value="chicken" checked  />치킨 <br  />
+        <input type="radio" name="hobby" value="camping"  />캠핑
+        <input type="radio" name="hobby" value="claming"  />클라이밍
+        <input type="radio" name="hobby" value="hiking"  />등산<br  />
+        <input type="date"  />
+        <input type="time"  /><br  />
+        <input type="datetime-local"  /><br  />
+        <select>
+            <optgroup label="ASIA">
+            <option value="Korea">대한민국</option>
+            <option value="Japan">일본</option>
+            </optgroup>
+
+            <optgroup label="AMERICA">
+            <option value="USA"> 미국 </option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+</html>
