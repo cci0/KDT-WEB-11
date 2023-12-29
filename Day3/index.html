@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--부모에게 속성을 부여하면, 자식 관계도 같은 속성을 얻게 된다.-->
+    <style>
+        /* CSS는 이게 주석이다. crtl+/가 단축키*/
+        .orange { 
+            color: rgb(236, 46, 229);
+        }
+        .bgColor {
+            background-color: rgb(254, 237, 124);
+        }
+        #orange {
+            /* font-size: 글씨 크기를 변경하는 명령어 */
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span id="orange" class="orange bgColor">오렌지</span>
+        <!--class는 한 번에 중첩으로 작성이 가능하다.-->
+        <!--class가 같은 속성이 두 개 이상일 때는 맨 뒤에 있는 것을 적용한다.
+        단 내장 방식은 haed style 순서도 중요하다.-->
+    </div>
+</body>
+</html>

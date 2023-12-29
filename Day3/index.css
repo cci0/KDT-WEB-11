@@ -1,0 +1,7 @@
+div .orange {
+    color: red;
+}
+/* 태그.class */
+.orange ~ li{
+    color: orange;
+}

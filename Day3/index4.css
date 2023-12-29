@@ -1,0 +1,13 @@
+/* .fruits span:first-child{
+    color: red;
+}
+.fruits h3:last-child{
+    color: orange;
+}
+.fruits *:nth-child(2n+1){
+    color: blue;
+} */
+.fruits *:not(span){
+    color: red;
+}
+/* not은 잘 쓰이지 않는다. */

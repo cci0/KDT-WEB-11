@@ -1,0 +1,11 @@
+h1:hover{
+    color: red;
+    cursor: pointer;
+    /* 'cursor:' 는 바우스 모양을 바꿀 때 사용한다. */
+}
+a:active{
+    background-color: blue;
+}
+input:focus{
+    background-color: orange;
+}
