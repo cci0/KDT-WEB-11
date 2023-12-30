@@ -1,0 +1,25 @@
+.main > div{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.main{
+    /* margin: 50px; */
+    /* margin: 10px 20px 30px 40px; */
+    margin-top: 20px;
+    margin-left: 30px;
+    /* border는 테두리 선을 그리는 속성 */
+    border: solid 2px black;
+    /* padding은 요소의 내부 여백을 지정 */
+    padding: 30px;
+}
+
+/*display: rayout 꾸밀 때 사용.
+그리고 화면에 어떻게 요소들을 보여줄지 나타낼 때 사용.*/
+/*span태그처럼 옆으로 붙는다.*/
+span{
+    display: block;
+}
