@@ -1,0 +1,9 @@
+.bgColor{
+    background-color: rebeccapurple;
+    min-width: calc(1920px - 50%);
+    min-height: 500px;
+}
+
+p{
+    line-height: 20px;
+}
