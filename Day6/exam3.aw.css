@@ -1,0 +1,64 @@
+.main {
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1 {
+    background-color: blueviolet;
+}
+
+.circle2 {
+    background-color: rgb(130, 109, 149);
+    top: 10px;
+    left: 10px;
+}
+
+.circle3 {
+    background-color: rgb(69, 37, 100);
+    top: 10px;
+    left: 10px;
+}
+
+.circle4 {
+    background-color: rgb(41, 21, 59);
+    top: 103px;
+    left: 192px;
+}
+
+.circle5 {
+    background-color: rgb(197, 161, 230);
+    top: 110px;
+    left: 270px;
+}
+
+.eye-white {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 18px;
+}
+
+.eye-black {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 7px;
+}
+
+.grass{
+    position: relative;
+    top: 115px;
+    z-index: 5;
+}
