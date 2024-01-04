@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.img1{
+    position: relative;
+    z-index: 3;
+    transform: translate(-90px, 60%) scale(0.4, 0.9) skewY(30deg)
+}
+
+.img2{
+    position: relative;
+    z-index: 2;
+    transform: translate(-90px, 60%) scale(0.4, 0.9) skewY(30deg)
+
+}
+
+.img3{
+    position: relative;
+    z-index: 1;
+    transform: translate(-90px, 60%) scale(0.4, 0.9) skewY(30deg)
+
+}
