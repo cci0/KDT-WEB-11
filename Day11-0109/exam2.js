@@ -1,6 +1,5 @@
 // 실습 2
-
-let i = 2;
+let i = 2; 
 function writeFunc() {
     let writer = document.getElementById('writer').value; //작성자
     let content = document.getElementById('content').value; //내용
