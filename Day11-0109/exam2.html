@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="title">방명록입니다.</p>
+
+        <div class="writer-info">
+            <b>작성자: </b><input type="text" id="writer" /><br />
+            <b>내용: </b><input type="text" id="content" /><br /><br />
+            <button id="sub" onclick="sub()">제출</button><br /><br />
+        </div>
+
+        <table id="review" border="1" cellspacing="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>작성자</th>
+                    <th>내용</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>김규리</td>
+                    <td>여러분 반가워요</td>
+                    <td>2022-7-2 15 : 3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>김규리</td>
+                    <td>오늘 수업도 열심히 해봐요</td>
+                    <td>2022-7-2 15 : 3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>홍길동</td>
+                    <td>안뇽!</td>
+                    <td>2022-7-2 15 : 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

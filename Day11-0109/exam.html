@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            값1: <input type="text" id="value1" />
+            <br />
+            값2: <input type="text" id="value2" />
+            <br />
+            연산자: <input type="text" id="oper" />
+            <br />
+            결과: <input type="text" id="result" />
+            <br />
+            <br />
+            <button id="do" onclick="calculate(value1, value2, oper)">계산하기</button>
+            <button id="remove" onclick="reset()">초기화</button>
+        </div>
+        <script src="exam.js"></script>
+    </body>
+</html>
