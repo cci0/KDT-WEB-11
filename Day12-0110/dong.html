@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 동적과 정적의 차이 -->
+        <!-- <div class="exam">1</div>
+        <div class="exam">2</div>
+        <div class="exam">3</div>
+        <div class="exam">4</div>
+        <div class="exam">5</div>
+
+        <script>
+            const exam = document.getElementsByClassName('exam')
+            const exam = document.querySelectorAll('.exam')
+            for ( let i = 1; i < exam.length; i += 2) {
+                exam[i].parentNode.removeChild(exam[i])
+            }
+            console.log(exam)
+        </script>
+
+        (.getElements…(''))동적: 조건 실행이 되면, 기존 배열이 아닌 변경된 배열을 기준으로 조건을 실행하게 된다. / 동적은 콘솔 자체에서 변화가 된다
+
+        (.querySelector…('./#'))정적: 조건 실행이 되면, 기존 배열을 가지고 조건을 실행하게 된다. / 정적은 콘솔 자체에서 변화가 안된다
+        -->
+
+        <!--details 태그-->
+        <details>
+            <summary>QnA</summary>
+            <div>사용자가 클릭 후 볼 수 있는 내용</div>
+        </details>
+
+        <div id="visible">Hello <span>World!</span></div>
+        <div id="hidden" class="hidden">Hello <span>World!</span></div>
+        <script>
+            // text.innerText = 'hi';
+            // text.textContent = '안녕';
+
+            // 랜더링된 텍스트와 전체 텍스트 출력
+
+            // 텍스트를 가져올 때의 차이
+            // .innerText: 1. "랜더링 된" 텍스트를 반영. 즉 스타일링이 적영된 후 텍스트를 반환한다
+            //            2. 성능이 textContent보다 느릴 수 있음
+
+            // .textContent: 1. 요소 "전체" 텍스트 컨텐츠를 가져온다. 즉, css스타일에 관계없이 모든 텍스트를 반환한다.
+            //              2. 랜더링 된 텍스트를 계산하지 않기 때문에 성능 면에서 innerText보다 더 빠르다.
+        </script>
+    </body>
+</html>
