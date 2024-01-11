@@ -9,41 +9,20 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     </head>
     <body>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img
-                        src="https://img.khan.co.kr/news/2023/09/27/l_2023092801001014200092871.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://health.chosun.com/site/data/img_dir/2023/07/14/2023071401917_0.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://img.segye.com/content/image/2017/08/30/20170830515039.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+        <div class="dropdown">
+            <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                Dropdown button
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.naver.com">NAVER</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </div>
-        <script>
-            const carousel = new bootstrap.Carousel('carouselExample');
-        </script>
     </body>
 </html>
