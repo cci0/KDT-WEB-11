@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+            }
+            div:hover {
+                cursor: pointer;
+            }
+            .red {
+                background-color: red;
+            }
+            .orange {
+                background-color: orange;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .green {
+                background-color: green;
+            }
+            .blue {
+                background-color: blue;
+            }
+            .purple {
+                background-color: purple;
+            }
+        </style>
+        <script>
+            let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+            let i = 0;
+            function changeColor() {
+                // ${'div'}.switchClass(colors[i], colors[i++ % colors.length], 1000)
+                if ($('div').hasClass('red')) {
+                    $('div').switchClass('red', 'orange', 1000);
+                } else if ($('div').hasClass('orange')) {
+                    $('div').switchClass('orange', 'yellow', 1000);
+                } else if ($('div').hasClass('yellow')) {
+                    $('div').switchClass('yellow', 'green', 1000);
+                } else if ($('div').hasClass('green')) {
+                    $('div').switchClass('green', 'purple', 1000);
+                } else {
+                    $('div').switchClass('purple', 'red', 1000);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="red" onclick="changeColor();"></div>
+    </body>
+</html>
