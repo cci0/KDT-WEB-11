@@ -1,3 +1,21 @@
+.calender{
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.calenderTitle{
+    color: green;
+    font-weight: bold;
+}
+
+.calenderContnet{
+    width: 30px;
+    line-height: 50px;
+    position: flex;
+    left: 500px;
+    text-align: center;
+}
+
 .sun {
     color: red;
 }

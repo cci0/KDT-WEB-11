@@ -11,74 +11,74 @@
     <body>
         <hr />
         <div class="title">
-            <span class="write-Date">날짜: </span>
-            <input type="text" class="write-Date" onclick="" />
+            <span class="writeDate">날짜: </span>
+            <input type="text" id="writeDate" class="writeDate" />
             <br />
-            <span class="write-Content">내용: </span>
-            <input type="text" class="write-Content" onclick="" />
+            <span class="writeContent">내용: </span>
+            <input type="text" id="writeContent" class="writeContent" />
             <br />
             <button type="button" onclick="content()">작성</button>
         </div>
 
         <div class="calender">
-            <span class="calender-title"> 2023년 1월 </span>
-            <table class="calender-Contnet" border="0px" cellspacing="0" cellpadding="5px">
+            <span class="calenderTitle"> 2023년 1월 </span>
+            <table class="calenderContnet" border="0px" cellspacing="0" cellpadding="5px">
                 <thead>
                     <tr>
                         <td class="sun">日</td>
-                        <td>月</td>
-                        <td>火</td>
-                        <td>水</td>
-                        <td>木</td>
-                        <td>金</td>
+                        <td class="mon">月</td>
+                        <td class="tue">火</td>
+                        <td class="wen">水</td>
+                        <td class="thu">木</td>
+                        <td class="fri">金</td>
                         <td class="sat">土</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="sun"></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td class="sat">6</td>
+                        <td class="sun" onclick="selectDate()"></td>
+                        <td class="mon" onclick="selectDate()">1</td>
+                        <td class="tue" onclick="selectDate()">2</td>
+                        <td class="wen" onclick="selectDate()">3</td>
+                        <td class="thu" onclick="selectDate()">4</td>
+                        <td class="fri" onclick="selectDate()">5</td>
+                        <td class="sat" onclick="selectDate()">6</td>
                     </tr>
                     <tr>
-                        <td class="sun">6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td class="sat">12</td>
+                        <td class="sun" onclick="selectDate()">6</td>
+                        <td class="mon" onclick="selectDate()">7</td>
+                        <td class="tue" onclick="selectDate()">8</td>
+                        <td class="wen" onclick="selectDate()">9</td>
+                        <td class="thu" onclick="selectDate()">10</td>
+                        <td class="fri" onclick="selectDate()">11</td>
+                        <td class="sat" onclick="selectDate()">12</td>
                     </tr>
                     <tr>
-                        <td class="sun">13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td class="sat">19</td>
+                        <td class="sun" onclick="selectDate()">13</td>
+                        <td class="mon" onclick="selectDate()">14</td>
+                        <td class="tue" onclick="selectDate()">15</td>
+                        <td class="wen" onclick="selectDate()">16</td>
+                        <td class="thu" onclick="selectDate()">17</td>
+                        <td class="fri" onclick="selectDate()">18</td>
+                        <td class="sat" onclick="selectDate()">19</td>
                     </tr>
                     <tr>
-                        <td class="sun">20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td class="sat">26</td>
+                        <td class="sun" onclick="selectDate()">20</td>
+                        <td class="mon" onclick="selectDate()">21</td>
+                        <td class="tue" onclick="selectDate()">22</td>
+                        <td class="wen" onclick="selectDate()">23</td>
+                        <td class="thu" onclick="selectDate()">24</td>
+                        <td class="fri" onclick="selectDate()">25</td>
+                        <td class="sat" onclick="selectDate()">26</td>
                     </tr>
                     <tr>
-                        <td class="sun">27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td></td>
-                        <td class="sat"></td>
+                        <td class="sun" onclick="selectDate()">27</td>
+                        <td class="mon" onclick="selectDate()">28</td>
+                        <td class="tue" onclick="selectDate()">29</td>
+                        <td class="wen" onclick="selectDate()">30</td>
+                        <td class="thu" onclick="selectDate()">31</td>
+                        <td class="fri" onclick="selectDate()"></td>
+                        <td class="sat" onclick="selectDate()"></td>
                     </tr>
                 </tbody>
             </table>

@@ -1,104 +1,39 @@
-.main{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.header1{
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(209, 209, 209);
-    align-items: center;
+.main1 {
     display: flex;
-    font-weight: bold;
-}
-
-.logo1{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-}
-
-.MENU1{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-    left: 500px;
-}
-
-.MENU2{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-    left: 150px;
-}
-
-.MENU3{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-    left: 250px;
-}
-
-.header2{
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(209, 209, 209);
-    /* flex-wrap: nowrap; */
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-weight: bold;
-}
-
-.MENU4{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-}
-
-.MENU5{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-}
-
-.MENU6{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
-}
-
-.header3{
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(209, 209, 209);
-    /* flex-wrap: nowrap; */
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    background-color: red;
+    height: 50px;
+    align-items: center;
+    padding: 0px 10px;
     font-weight: bold;
 }
-
-.MENU7{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
+.menu1 {
+    display: flex;
+}
+.menu1 div:nth-child(2) {
+    margin: 0px 10px;
 }
 
-.MENU8{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
+.main4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    height: 50px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px;
 }
 
-.MENU9{
-    width: 50px;
-    height: 25px;
-    background-color: rgb(209, 209, 209);
+.menu4 {
+    display: flex;
+}
+.menu4 div:nth-child(2n) {
+    margin: 0px 10px;
+}
+.login4 {
+    display: flex;
+}
+.login4 div:first-child {
+    margin:0px 10px;
 }
