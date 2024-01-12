@@ -1,0 +1,44 @@
+/* 모바일 메뉴 만들기 */
+header {
+    background-color: skyblue;
+}
+
+.logo {
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+nav div {
+    padding: 10px 0px;
+}
+
+/* 768px보다 클 때 */
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: skyblue;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: skyblue;
+    }
+    .logo {
+        position: relative;
+        padding-left: 80px;
+        line-height: 100px;
+    }
+    nav div {
+        padding: 30px 10px;
+        font-weight: bold;
+    }
+}
