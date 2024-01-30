@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function changeBgColor(newColor) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        document.body.style.backgroundColor = newColor;
+                        resolve();
+                    }, 1000);
+                });
+            }
+
+            // 실행
+            changeBgColor('red')
+                .then(() => {
+                    return changeBgColor('orange');
+                })
+                .then(() => {
+                    return changeBgColor('yellow');
+                })
+                .then(() => {
+                    return changeBgColor('green');
+                })
+                .then(() => {
+                    return changeBgColor('blue');
+                })
+                .then(() => {
+                    return changeBgColor('navy');
+                })
+                .then(() => {
+                    return changeBgColor('purple');
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+/* 도서 이미지 영역 */
+.main {
+    margin: 20px;
+}
+/* 도서 상품 안내 영역 */
+.main_category {
+    display: inline-block;
+    background: #d9d9d9;
+    text-align: center;
+    font-size: 10px;
+    color: #333333;
+    border-radius: 15px;
+    padding: 1px 7px 2px 7px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.main_title {
+    margin-bottom: 5px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 5px;
+    color: #9e9e9e;
+    font-size: 10px;
+}
+
+/* 가격 안내 영역 */
+.price {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sale {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.empty {
+    margin-right: 15px;
+}
+
+.origin_price {
+    color: rgb(202, 202, 202);
+    font-size: 8px;
+    text-decoration: line-through;
+}
+
+.sale_price {
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* 마일리지, 배송 안내 영역 */
+.info {
+    margin: 0 20px;
+}
+
+li div {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.list_tilte {
+    position: absolute;
+}
+
+.list_content {
+    margin-left: 80px;
+}
+
+.ytz {
+    display: inline-block;
+    background: #fea700;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 1px 7px 2px 7px;
+    margin-bottom: 5px;
+}
+
+.ytz_text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* 별점 및 리뷰 안내 영역 */
+
+.review_list {
+    margin: 0 20px;
+    display: flex;
+    align-items: center; /* 세로로 가운데 정렬 */
+    height: 20px;
+}
+
+.score {
+    font-size: 12px;
+    color: #cacaca;
+}
+span {
+    color: #333333;
+    font-size: 12px;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    width: 280px;
+    height: 30px;
+    margin: 10px;
+    font-size: 12px;
+    background-color: white;
+    color: #333333;
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+}
+
+button.clicked {
+    background-color: #9e9e9e;
+}
+
+/* 광고 영역 */
+.ad {
+    margin-top: 10px;
+}
+
+/* 오늘의 추천 영역 */
+
+.today_title {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 20px;
+}
+
+.recommend_move {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recommend_move_list {
+    display: flex;
+    margin: 0 15px;
+    -ms-overflow-style: none;
+}
+
+.recommend_move_list:-webkit-scrollbar {
+    display: none;
+}
+
+.recommend_move_item {
+    margin-left: 5px;
+}
+
+.move-category {
+    display: inline-block;
+    background: #d9d9d9;
+    text-align: center;
+    font-size: 8px;
+    color: #333333;
+    border-radius: 12px;
+    padding: 1px 7px 2px 7px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.move_title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recommend_move_info {
+    font-size: 10px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.move_review_list {
+    display: flex;
+    align-items: center; /* 세로로 가운데 정렬 */
+    height: 20px;
+}
+
+.move_score {
+    font-size: 10px;
+    color: #cacaca;
+}
+
+.empty_box {
+    border: 10px solid #9e9e9e;
+    background-color: #9e9e9e;
+}
