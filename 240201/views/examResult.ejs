@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h4>데이터 전송 결과 페이지</h4>
+        <h5><%= title %></h5>
+        <div><span><%= userInfo.name %></span>님의 개인정보입니다</div>
+        <div><span>성별: <%= userInfo.genders %></span></div>
+        <div>
+            <span>생년월일: <%= userInfo.year %>년 <%= userInfo.month %>월 <%= userInfo.day %>일 </span>
+        </div>
+        <div><span>관심사: <%= userInfo.inters%></span></div>
+        <br />
+        <br />
+        <a href="/">홈으로 이동</a>
+    </body>
+</html>
