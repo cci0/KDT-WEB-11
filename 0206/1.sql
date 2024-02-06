@@ -1,5 +1,4 @@
 -- SELECT * FROM kdt11.newuser;
-
 -- 1
 SELECT * FROM newuser ORDER BY birthday ASC;
 -- 2
