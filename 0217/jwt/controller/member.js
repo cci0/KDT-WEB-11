@@ -10,7 +10,7 @@ exports.signup = async (req, res) => {
     console.log('find', find);
 
     if (find) {
-        res.json({ result: false, message: '이미존재하는 회원' });
+        res.json({ success: false, message: '이미존재하는 회원' });
     } else {
         const password = await bcrypt.hash(pw, 11);
         //생성 create
@@ -18,24 +18,27 @@ exports.signup = async (req, res) => {
         console.log('signup', result);
         const result2 = await Profile.create({ username, age, email, memberId: result.id });
         console.log('profile', result2);
-        res.json({ result: true });
+        res.json({ success: true });
     }
 };
 //로그인
 exports.login = async (req, res) => {
     const { userId, pw } = req.body;
-    const password = await bcrypt.compare(pw);
+
     //검색 findOne
     const result = await Member.findOne({ where: { userId } });
     console.log('login', result);
     if (result) {
         const password = await bcrypt.compare(pw, result.password);
-        //jwt토큰 발행
-        const token = jwt.sign({ id: result.id }, process.env.SECRET, { expiresIn: '1h' });
-
-        res.json({ result: true, data: result, token });
+        if (password) {
+            //jwt토큰 발행
+            const token = jwt.sign({ id: result.id }, process.env.SECRET, { expiresIn: '1h' });
+            res.json({ success: true, token });
+        } else {
+            res.json({ success: false, message: '비밀번호가 틀립니다' });
+        }
     } else {
-        res.json({ result: false });
+        res.json({ success: false });
     }
 };
 //회원조회
@@ -49,7 +52,7 @@ exports.find = async (req, res) => {
         include: [{ model: Profile, attributes: ['username', 'age', 'email'] }],
     });
     console.log('result', result);
-    res.json({ result: true, data: result });
+    res.json({ success: true, result });
 };
 //정보수정
 exports.update = async (req, res) => {
@@ -58,12 +61,12 @@ exports.update = async (req, res) => {
     const result = await Member.update({ password: pw }, { where: { id } });
     console.log('update', result);
     await Profile.update({ username, age, email }, { where: { memberId: id } });
-    res.json({ result: true });
+    res.json({ success: true });
 };
 //회원탈퇴
 exports.delete = async (req, res) => {
     const { id } = req.user;
     const result = await Member.destroy({ where: { id } });
     console.log('delete', result);
-    res.json({ result: true });
+    res.json({ success: true });
 };

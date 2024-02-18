@@ -27,7 +27,7 @@
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
                 });
-                const { profile, userId, password } = res.data.data;
+                const { profile, userId, password } = res.data.result;
                 console.log(res);
                 document.querySelector('#userId').value = userId;
                 document.querySelector('#pw').value = password;
@@ -38,7 +38,6 @@
 
             async function updateFunc() {
                 const data = {
-                    id: localStorage.getItem('login'),
                     pw: document.querySelector('#pw').value,
                     username: document.querySelector('#username').value,
                     age: document.querySelector('#age').value,
@@ -53,7 +52,7 @@
                     },
                 });
                 console.log(res);
-                if (res.data.result) {
+                if (res.data.success) {
                     alert('수정되었습니다');
                     document.location.reload();
                 }
@@ -66,12 +65,11 @@
                 const res = await axios({
                     method: 'DELETE',
                     url: '/api/member/delete',
-                    data,
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
                 });
-                if (res.data.result) {
+                if (res.data.success) {
                     alert('탈퇴 완료되었습니다');
                     document.location.href = '/';
                 }
