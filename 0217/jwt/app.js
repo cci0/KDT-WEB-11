@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 //테이블싱크
 //force:true 항상 테이블을 삭제 후 재생성
 //force:false(기본값) 테이블이 존재하면 패쓰, 없으면 생성
-db.sequelize.sync({ force: false }).then(() => {
+db.sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => {
         console.log(`http://localhost:${PORT}`);
     });
