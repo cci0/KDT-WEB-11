@@ -1,5 +1,6 @@
 const express = require('express');
 const crypto = require('crypto');
+const bcrypt = require('bcrypt');
 const app = express();
 const PORT = 8000;
 
@@ -12,13 +13,15 @@ app.post('/sign', (req, res) => {
     const { pw } = req.body;
     //const sign = createHashedPassword(pw);
     //sign = createPbkdf(pw);
-    sign = cipherEncrypt(pw);
+    //sign = cipherEncrypt(pw);
+    sign = bcryptPassword(pw);
     res.json({ result: sign });
 });
 app.post('/verify', (req, res) => {
     const { pw } = req.body;
     //const result = verifyPassword(pw, sign);
-    const result = decipher(sign);
+    //const result = decipher(sign);
+    const result = comparePassword(pw, sign);
     res.json({ result });
 });
 
@@ -75,15 +78,13 @@ const decipher = (encryptedData) => {
     return decryptedData;
 };
 
-// bcrypt 단방향
+//bcrypt 단방향
 const saltNumber = 10;
-
-// 암호화
+//암호화
 const bcryptPassword = (password) => {
     return bcrypt.hashSync(password, saltNumber);
 };
-
-// 비교
+//비교
 const comparePassword = (password, dbPassword) => {
     return bcrypt.compareSync(password, dbPassword);
 };
