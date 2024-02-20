@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const aws = require('aws-sdk'); // aws 설정을 위한 모듈
 const multer = require('multer');
@@ -7,9 +8,9 @@ const PORT = 8000;
 
 // aws 설정
 aws.config.update({
-    accessKeyId: 'AKIAQ3EGRCQWIZZEW77M', // 엑세스키
-    secretAccessKey: '/LtmTMRAoFFzr/+NO2x8Y3MBGaUNQm08+VJTR7Dk', // 엑세스 비밀번호
-    regin: 'ap-northeast-2',
+    accessKeyId: process.env.ACCESSID, // 엑세스키
+    secretAccessKey: process.env.SECRETKEY, // 엑세스 비밀번호
+    regin: process.env.REGIN,
 });
 
 // aws s3 인스턴스 생성
