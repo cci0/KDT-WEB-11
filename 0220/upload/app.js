@@ -34,7 +34,6 @@ const upload = multer({
 app.set('view engine', 'ejs');
 
 // 라우터
-
 // 페이지
 app.get('/', (req, res) => {
     res.render('index');
