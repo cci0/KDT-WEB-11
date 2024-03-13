@@ -1,0 +1,27 @@
+.div {
+    width: 500px;
+    background-color: rgb(242, 240, 183);
+}
+
+.best {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.detail {
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 70px;
+}

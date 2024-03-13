@@ -6,13 +6,6 @@ const multerS3 = require('multer-s3'); // aws s3에 파일 업로드하기 위�
 const app = express();
 const PORT = 8000;
 
-// aws 설정
-aws.config.update({
-    accessKeyId: process.env.ACCESSID, // 엑세스키
-    secretAccessKey: process.env.SECRETKEY, // 엑세스 비밀번호
-    regin: process.env.REGIN,
-});
-
 // aws s3 인스턴스 생성
 const s3 = new aws.S3();
 
