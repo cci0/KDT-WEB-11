@@ -1,0 +1,58 @@
+// Sass Styling
+
+@import './variables.scss';
+// - 변수 선언: $ 키워드 사용 (_variables.scss)
+// $color-red: red;
+// $color-orange: orange;
+// $color-yellow: yellow;
+
+@import './utils.scss';
+// - 믹스인(함수) 선언(정의) (_utils.scss)
+// @mixin box($size) {
+//     width: $size;
+//     height: $size;
+// }
+
+// - 중첩: 부모 자신 관계를 표현할 수 있다
+.container {
+    display: flex;
+    .box {
+        // width: 100px
+        // 믹스인 호출
+        @include box(150px);
+
+        // &: 부모 선택자 참조해서 치환
+        &.red {
+            // $.red = .box.red
+            background-color: $color-red;
+        }
+
+        &.orange {
+            background-color: $color-orange;
+        }
+
+        &.yellow {
+            background-color: $color-yellow;
+        }
+
+        &:hover {
+            // .box에 적용
+            // - 연산 가능
+            $box-animation: $animation-duration * 2;
+            transform: translateY(-20px);
+            transition: transform $box-animation;
+        }
+    }
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.btn-primary {
+    // - 확장: 기존 선택자 스타일을 다른 선택자에게 상속
+    @extend .btn;
+    background-color: pink;
+}

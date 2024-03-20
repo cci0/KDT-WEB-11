@@ -1,0 +1,57 @@
+@mixin size($size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@mixin details($top, $left, $bgColor) {
+    top: $top;
+    left: $left;
+    background-color: $bgColor;
+}
+
+.larva {
+    position: relative;
+
+    .body {
+        @include size(100px);
+
+        &.body1 {
+            @include details(100px, 100px, rgb(0, 0, 166));
+
+            .eye-white {
+                @include size(40px);
+                @include details(20px, 10px, white);
+
+                .eye-black {
+                    @include size(20px);
+                    @include details(10px, 0px, black);
+                }
+            }
+        }
+
+        &.body2 {
+            @include details(150px, 160px, rgb(36, 61, 206));
+        }
+
+        &.body3 {
+            @include details(190px, 200px, rgb(52, 118, 231));
+        }
+
+        &.body4 {
+            @include details(240px, 220px, rgb(47, 146, 233));
+        }
+
+        &.body5 {
+            @include details(280px, 280px, rgb(140, 191, 253));
+            z-index: 10;
+        }
+    }
+}
+
+.grass {
+    position: absolute;
+    top: 260px;
+    left: 0;
+}
